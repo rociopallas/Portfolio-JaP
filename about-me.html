@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio - Acerca de mí</title>
+</head>
+
+<body>
+    <!-- sección encabezado, se incluye de otro archivo -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+
+    <!-- sección principal -->
+    <main>
+        <section class="section" id="s_up">
+            <div class="left-section">
+              <h1>Hola, soy estudiante de programación web</h1>
+              <p>Actualmente estoy cursando la Fase 2 del curso curso de Jovenes a Programar, opción Desarrollo Web, y un bootcamp de 9 meses de software engineer en el instituto Holberton. Ambos cursos terminan en el mes de noviembre.</p>
+              <p>Por el momento tengo conocimientos en Python, C, HTML y CSS. Cuento también con conocimientos básicos en JavaScript, MySQL, y C#.Además estoy cursando el nivel B1 de ingles.</p>
+            </div>
+            <div class="right-section">
+              <div class="info-card">
+                <h2>Información Personal</h2>
+                <ul>
+                  <li><strong>Nombre:</strong> Rocío Pallas</li>
+                  <li><strong>Fecha de Nacimiento:</strong> 05/04/1995</li>
+                  <li><strong>País:</strong> Uruguay</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+      
+          <section class="section" id="s_down">
+            <h2 class="languages-title">Lenguajes que estoy estudiando:</h2>
+            <div class="languages-icons">
+              <img src="images/python_logo.png" alt="Python">
+              <img src="images/c_logo.png" alt="C">
+              <img src="images/html_logo.png" alt="HTML">
+              <img src="images/css_logo.png" alt="CSS">
+              <img src="images/js_logo.png" alt="JavaScript">
+            </div>
+          </section>
+    </main>
+
+    <!-- sección pie de página, se incluye de otro archivo -->
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <!-- script para incluir encabezado y pie de página -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#header-container').load('header.html');
+            $('#footer-container').load('footer.html');
+        });
+    </script>
+
+</body>
+
+</html>

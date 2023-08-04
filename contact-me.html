@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portfolio - Contacto</title>
+</head>
+
+<body>
+    <!-- sección encabezado, se incluye de otro archivo -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+
+    <!-- sección principal -->
+    <main>
+        <section class="section contact">
+            <div class="container">
+              <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <ul>
+                  <li><strong>Dirección:</strong> Montevideo, Uruguay</li>
+                  <li><strong>Teléfono:</strong> +598 94 961 682</li>
+                  <li><strong>Email:</strong> <a href="mailto:rocio.orquestas@gmail.com">rocio.orquestas@gmail.com</a></li>
+                  <li><strong>Github:</strong> <a href="https://github.com/RoPallas">@RoPallas</a></li>
+                  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rocio-pallas-663314232">Rocío Pallas</a></li>
+                </ul>
+              </div>
+              <div class="contact-form">
+                <h2>Contáctame</h2>
+                <form id="contact-form">
+                  <input type="text" name="name" placeholder="Nombre" required>
+                  <input type="email" name="email" placeholder="Correo electrónico" required>
+                  <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <!-- sección pie de página, se incluye de otro archivo -->
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <!-- script para incluir encabezado y pie de página -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#header-container').load('header.html');
+            $('#footer-container').load('footer.html');
+        });
+    </script>
+</body>
+
+</html>

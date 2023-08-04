@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portfolio - CV</title>
+</head>
+
+<body>
+    <!-- sección encabezado, se incluye de otro archivo -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+
+    <!-- sección principal -->
+    <main class="cv">
+        <section class="section_cv">
+            <div class="education-table">
+                <h2>Educación</h2>
+                <table>
+                    <tr>
+                        <th>Liceo n°4</th>
+                        <td>Bachillerato</td>
+                        <td>2010 - 2012</td>
+                    </tr>
+                    <tr>
+                        <th>Educación IT</th>
+                        <td>Cursos básicos varios</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <th>Quark Academy</th>
+                        <td>Curso básico en C# - POO</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <th>Jóvenes a Programar</th>
+                        <td>Desarrollo web</td>
+                        <td>En curso</td>
+                    </tr>
+                    <tr>
+                        <th>Holberton</th>
+                        <td>Software Engineer bootcamp</td>
+                        <td>En curso</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="skills-list">
+                <h2>Habilidades y conocimientos</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>C# (básico)</li>
+                    <li>Base de datos estructuradas</li>
+                    <li>Ingles B1</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- sección pie de página, se incluye de otro archivo -->
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <!-- script para incluir encabezado y pie de página -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#header-container').load('header.html');
+            $('#footer-container').load('footer.html');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portfolio - Proyectos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- sección encabezado, se incluye de otro archivo -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+
+    <!-- sección principal -->
+    <main>
+        <section class="section-projects">
+            <img src="images/zone.png" alt="Proyecto">
+          </section>
+    </main>
+
+    <!-- sección pie de página, se incluye de otro archivo -->
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <!-- script para incluir encabezado y pie de página -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#header-container').load('header.html');
+            $('#footer-container').load('footer.html');
+        });
+    </script>
+</body>
+
+</html>
